@@ -21,15 +21,15 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-8 gap-8">
-      <h1 className="text-4xl font-bold text-blue-600 mb-6">
+      <h1 className="text-4xl font-bold text-black-600 mb-6">
         Monitoramento de Estufas de Vacinação
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
         {/* Sensor DHT11 */}
-        <div className="bg-white shadow-lg rounded-2xl p-6 text-center">
+        <div className="bg-blue shadow-lg rounded-2xl p-6 text-center">
           <h2 className="text-xl font-semibold text-gray-700">Sensor DHT11</h2>
-          <p className="text-3xl font-bold text-red-600 mt-2">
+          <p className="text-3xl font-bold text-green-600 mt-2">
             {tempDHT !== null ? `${tempDHT.toFixed(1)}°C` : "--"}
           </p>
           <p className="text-lg text-gray-500 mt-1">
